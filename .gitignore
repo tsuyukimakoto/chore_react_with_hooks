@@ -3,6 +3,9 @@
 # macos
 .DS_Store
 
+# common
+dist/
+
 # Logs
 logs
 *.log
