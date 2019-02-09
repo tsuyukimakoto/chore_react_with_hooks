@@ -26,6 +26,7 @@
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@storybook/react": "^4.1.11",
+    "awesome-typescript-loader": "^5.2.1",
     "axios-mock-adapter": "^1.16.0",
     "babel-loader": "^8.0.5",
     "faker": "^4.1.0",
