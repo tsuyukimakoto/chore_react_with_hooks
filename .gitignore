@@ -6,6 +6,9 @@
 # common
 dist/
 
+# story-book
+storybook-static/
+
 # Logs
 logs
 *.log
