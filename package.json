@@ -1,0 +1,39 @@
+{
+  "name": "chore_react_with_hooks",
+  "version": "0.0.1",
+  "description": "chore exercise'",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsuyukimakoto/chore_react_with_hooks.git"
+  },
+  "author": "makoto tsuyuki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsuyukimakoto/chore_react_with_hooks/issues"
+  },
+  "homepage": "https://github.com/tsuyukimakoto/chore_react_with_hooks#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@storybook/react": "^4.1.11",
+    "axios-mock-adapter": "^1.16.0",
+    "babel-loader": "^8.0.5",
+    "faker": "^4.1.0",
+    "jest": "^24.1.0",
+    "prettier": "^1.16.4",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
