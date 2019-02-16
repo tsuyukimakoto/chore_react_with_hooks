@@ -4,7 +4,7 @@
   "description": "chore exercise'",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "repository": {
@@ -35,7 +35,7 @@
     "axios-mock-adapter": "^1.16.0",
     "babel-loader": "^8.0.5",
     "faker": "^4.1.0",
-    "jest": "^24.1.0",
+    "jest": "23.6.0",
     "prettier": "^1.16.4",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "ts-jest": "^23.10.5",
@@ -44,5 +44,25 @@
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/src/**.spec.ts?(x)"
+    ],
+    "moduleFileExtensions": "THIS IS COMMENT: need js and jsx extensions https://github.com/facebook/jest/issues/6514",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ]
   }
 }
