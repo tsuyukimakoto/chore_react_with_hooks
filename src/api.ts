@@ -1,8 +1,7 @@
 import axios from 'axios'
 
-
 export const api = axios.create({
-  baseURL: '/api',
+  baseURL: '/api'
 })
 
 export type TodoModel = {
@@ -12,8 +11,6 @@ export type TodoModel = {
   created_at: string
 }
 
-export const getTodos = () =>
-  api.get<TodoModel>('/todos?format=json')
+export const getTodos = () => api.get<TodoModel>('/todos?format=json')
 
-export const getTodo = (todoId: string) =>
-  api.get<TodoModel>(`/todos/${todoId}?format=json`)
+export const getTodo = (todoId: string) => api.get<TodoModel>(`/todos/${todoId}?format=json`)
