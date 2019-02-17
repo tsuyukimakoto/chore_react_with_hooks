@@ -4,6 +4,7 @@
   "description": "chore exercise'",
   "main": "src/index.ts",
   "scripts": {
+    "build": "webpack --mode production",
     "lint": "tslint --fix src/**/*.ts",
     "test": "jest",
     "storybook": "start-storybook -p 9001 -c .storybook"
