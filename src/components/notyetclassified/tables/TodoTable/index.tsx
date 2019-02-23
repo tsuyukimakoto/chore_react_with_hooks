@@ -3,9 +3,9 @@ import * as ReactDOM from 'react-dom';
 import { TodoModel } from '../../../../api';  // TODO import relative from src
 
 type Props = {
-    todos: TodoModel[]
-    editRow: Function
-    deleteTodo: Function
+  todos: TodoModel[]
+  editRow: Function
+  deleteTodo: Function
 }
 
 const TodoTable: React.FC<Props> = (props:Props) => (
@@ -40,9 +40,9 @@ const TodoTable: React.FC<Props> = (props:Props) => (
               </tr>
           ))
         ):(
-                <tr>
-                    <td colSpan={4}>No todos</td>
-                </tr>
+              <tr>
+                  <td colSpan={4}>No todos</td>
+              </tr>
         )
       }
     </tbody>
