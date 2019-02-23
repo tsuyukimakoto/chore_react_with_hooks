@@ -5,10 +5,10 @@ export const api = axios.create({
 })
 
 export type TodoModel = {
-  id: string
+  id?: string
   headline: string
   content: string
-  created_at: string
+  created_at?: string
 }
 
 export const getTodos = () => api.get<TodoModel>('/todos?format=json')
