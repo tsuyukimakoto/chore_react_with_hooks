@@ -14,7 +14,7 @@ const App = () => {
         {id: 'a4', headline: 'headline4', content: 'this is content4', created_at: '2019-02-23 14:00'},
     ];
 
-    const [ todos, setTodos ] = React.useState(todoData);
+    const [ todos, setTodos ] = React.useState<TodoModel[]>(todoData);
 
     return (
         <div>
@@ -25,7 +25,7 @@ const App = () => {
                 </div>
                 <div>
                     <h2>View Todos</h2>
-                    <TodoTable />
+                    <TodoTable todos={todos} />
                 </div>
             </div>
         </div>
