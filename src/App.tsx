@@ -21,6 +21,11 @@ const App = () => {
         setTodos([...todos, todo])
     }
 
+    const deleteTodo = (id: string) => {
+        setTodos(todos.filter(todo => todo.id !== id))
+    }
+
+
     return (
         <div>
             <h1>Chore TODO</h1>
@@ -31,7 +36,7 @@ const App = () => {
                 </div>
                 <div>
                     <h2>View Todos</h2>
-                    <TodoTable todos={todos} />
+                    <TodoTable todos={todos} deleteTodo={deleteTodo} />
                 </div>
             </div>
         </div>

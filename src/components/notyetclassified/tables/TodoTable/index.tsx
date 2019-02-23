@@ -3,7 +3,8 @@ import * as ReactDOM from 'react-dom';
 import { TodoModel } from '../../../../api';  // TODO import relative from src
 
 type Props = {
-    todos: TodoModel[]
+    todos: TodoModel[],
+    deleteTodo: Function,
 }
 
 const TodoTable: React.FC<Props> = (props:Props) => (
@@ -23,7 +24,11 @@ const TodoTable: React.FC<Props> = (props:Props) => (
                 <td>{todo.headline}</td>
                 <td>
                   <button>Edit</button>
-                  <button>Delete</button>
+                  <button
+                    onClick={() => props.deleteTodo(todo.id)}
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
           ))
