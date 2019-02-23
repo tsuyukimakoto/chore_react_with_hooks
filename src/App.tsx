@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { render } from 'react-dom'
+import TodoTable from './components/notyetclassified/tables/TodoTable'
 
 const App = () => (
 <div>
@@ -10,6 +11,7 @@ const App = () => (
         </div>
         <div>
             <h2>View Todos</h2>
+            <TodoTable />
         </div>
     </div>
 </div>
