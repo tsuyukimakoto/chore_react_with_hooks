@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 
 import { TodoModel } from './api'
 import TodoTable from './components/notyetclassified/tables/TodoTable'
-
+import AddTodoForm from './components/notyetclassified/forms/AddTodoForm'
 
 const App = () => {
 
@@ -16,12 +16,18 @@ const App = () => {
 
     const [ todos, setTodos ] = React.useState<TodoModel[]>(todoData);
 
+    const addTodo = (todo: TodoModel) => {
+        todo.id = 'a' + (todos.length + 1)
+        setTodos([...todos, todo])
+    }
+
     return (
         <div>
             <h1>Chore TODO</h1>
             <div>
                 <div>
                     <h2>Add Todo</h2>
+                    <AddTodoForm addTodo={addTodo} />
                 </div>
                 <div>
                     <h2>View Todos</h2>
