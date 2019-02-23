@@ -10,7 +10,7 @@ const AddTodoForm: React.FC<Props> = props => {
   const initialFormState: TodoModel = { id: null, headline: '', content: '' }
   const [ todo, setTodo ] = React.useState(initialFormState)
 
-  const handleInputChange = (event:React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (event:React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement>) => {
     const {name, value} = (event.target)
 
     setTodo({ ...todo, [name]: value })
@@ -30,7 +30,7 @@ const AddTodoForm: React.FC<Props> = props => {
       <label>Headline</label>
       <input type="text" name="headline" value={todo.headline} onChange={handleInputChange} />
       <label>Content</label>
-      <textarea name="content" onChange={handleInputChange}>{todo.content}</textarea>
+      <textarea name="content" onChange={handleInputChange} value={todo.content} />
       <button>Add new todo</button>
     </form>
   )
