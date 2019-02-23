@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "lint": "tslint --fix src/**/*.ts",
+    "start": "webpack-dev-server",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest"
   },
