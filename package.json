@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/tsuyukimakoto/chore_react_with_hooks#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "react": "^16.8.4",
     "react-dom": "16.8.6",
     "styled-components": "4.2.0"
