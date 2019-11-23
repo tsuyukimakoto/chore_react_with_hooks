@@ -4,5 +4,5 @@
   ],
   "assignees": ["tsuyukimakoto"],
   "timezone": "Asia/Tokyo",
-  "schedule": ["every weekend"]
+  "schedule": "every weekend"
 }
